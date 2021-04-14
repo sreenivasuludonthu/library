@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\home.css">
+<link rel="stylesheet" href="css\index.css">
+
+<style>
+img {
+    width:;
+    height:;
+	padding:20px;
+	border-radius: 25px;
+}
+input[type=file] {
+ /* width: 100%;*/
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+button{
+border-radius: 25px;
+padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  
+}
+input[type=text] {
+ /* width: 100%;*/
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+input[type=submit] {
+ /* width: 100%;*/
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+</style>
+</head>
+<body>
+<h1  class="title"><img src="bgimages\logo.jpg" height="85"width="1250"></h1>
+<div class="navbar">
+  <a href="submit.php"target="_blank">Submit book</a>
+  <div class="subnav">
+    <a href="facultynonpdf.php">Faculty Upload</a>
+  </div> 
+  <div class="subnav">
+    <a href="admin.php" target="_blank">BookList PDF</a>
+  </div>
+  <div class="subnav">
+   <a href="facultypdf.php"target="_blank">Faculty Upload PDF</a>
+  </div> 
+  <div class="subnav">
+    <a href="studentregisterpdf.php"target="_blank">Students Register PDF</a>
+  </div>
+  <div class="subnav">
+    <a href="index.php">LogOut</a>
+  </div>
+ </div>
+<div class="fix">
+<ul class="tm-main-nav-ul">
+                            <li class="tm-nav-item"><!--<a href="updatebooks.php" class="tm-nav-item-link tm-button">-->
+								<form  action="importbooks.php" method="post" name="upload_excel" enctype="multipart/form-data">
+    								<input type="file" name="file" id="file" class="input-large">
+									<button type="submit" id="submit" name="Import" class="btn btn-primary button-loading" data-loading-text="Loading...">Upload books</button>
+								</form>									
+								<!--<i class="fa fa-smile-o tm-nav-fa"></i><h2 class="txt">Update Books</h2></a>
+                            </li>-->
+                               <li class="tm-nav-item"><a href="booked.php" class="tm-nav-item-link tm-button">
+                                <i class="fa fa-image tm-nav-fa"></i><h1 class="txt">Booked List</h1> </a>
+                            </li>
+                            <li class="tm-nav-item"><a href="renewablelist.php" class="tm-nav-item-link tm-button">
+                                <i class="fa fa-tasks tm-nav-fa"></i><h1 class="txt">Renewable List</h1></a>
+                            </li>
+               
+							<li class="tm-nav-item"><!--<a href="updatebooks.php" class="tm-nav-item-link tm-button">-->
+								<form  action="indibook.php" method="post" name="upload_excel" enctype="multipart/form-data"target="_blank">
+    								<input type="text" name="sid" placeholder="Enter Rollnumber">
+									<input type="submit" id="submit" name="Submit">
+								</form>									
+ </ul>
+</div>
+<div align="right"><img src="bgimages\college.jpeg" width="63%" height="63%"></div>
+</body>
+</html>
